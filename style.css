@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: "Alumni Sans SC", sans-serif;
+    color: white;
+    background-image: url(background.jpg); 
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.8s ease;
+}
+
+.signup, .login{
+    height: 100vh;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    background-color: bisque;
+    height: 25rem;
+    width: 45rem;
+}
+
+.banner-signup, .banner-login{
+    height: 25rem;
+    width: 25rem;  
+    text-align: center; 
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    transition: all 0.8s ease;
+}
+
+.banner-signup:hover, .banner-login:hover{
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 27px );
+    transform: scale(1.05);
+}
+
+.banner-signup-text, .banner-login-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 8rem;
+    margin: 0;
+    line-height: 1;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#signup-form, #login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* adds space between items */
+}
+#signup-form input, #login-form input{
+    width: 20rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+}
+
+#signup-form button, #login-form button{
+    font-size: 1.4rem;
+    padding: 0.5rem 2rem;
+    border-style: double;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.banner{
+    text-align: center;
+    font-size: 2rem;
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    transition: all 0.8s ease;
+}
+.banner:hover{
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 0 50px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 27px );
+    transform: scale(1.03);
+}
+
+
+.banner-header p{
+    text-align: left;
+    font-size: 4rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-underline-offset: 10px;
+}
+
+.banner-socials p{
+    margin-bottom: 0.7rem;
+}
+
+.banner-text{
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials-holder{
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+}
+
+.form-or p, a{
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.dark-mode{
+    background-color: black;
+    background-image: url(background-darkmode.jpg);
+}
+.dark-mode, .banner, .banner-signup, .banner-login{
+    box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.37);
+
+}
